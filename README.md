@@ -80,4 +80,8 @@ Alle Nachrichten und Sounds sind ebenfalls in der `config.yml` aenderbar.
 
 ---
 
-*Entwickelt von Centi09 -- centi09.de*
+---
+
+**[centi09.de/plugins/centitpa](https://centi09.de/plugins/centitpa)** | Dokumentation, Download-Counter und alle Infos auf der offiziellen Website.
+
+*Entwickelt von [Centi09](https://centi09.de)*
