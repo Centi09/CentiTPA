@@ -1,0 +1,49 @@
+name: CentiTPA
+version: 1.0.0
+main: de.centi.centitpa.CentiTPA
+api-version: '1.21'
+author: Centi09
+description: Sicheres TPA-System mit Warmup, Timeout, Schutz und klickbaren Nachrichten
+
+commands:
+  tpa:
+    description: Sende eine TPA-Anfrage an einen Spieler
+    usage: /tpa <spieler>
+    permission: centitpa.use
+  tpahere:
+    description: Fordere einen Spieler zu dir
+    usage: /tpahere <spieler>
+    permission: centitpa.use
+  tpaccept:
+    description: Nimm eine TPA-Anfrage an
+    usage: /tpaccept [spieler]
+    permission: centitpa.use
+    aliases: [tpyes]
+  tpdeny:
+    description: Lehne eine TPA-Anfrage ab
+    usage: /tpdeny [spieler]
+    permission: centitpa.use
+    aliases: [tpno]
+  tpcancel:
+    description: Brich deine gesendete TPA-Anfrage ab
+    usage: /tpcancel
+    permission: centitpa.use
+  tptoggle:
+    description: Aktiviert oder deaktiviert eingehende TPA-Anfragen
+    usage: /tptoggle
+    permission: centitpa.toggle
+    aliases: [tpaoff, tpaon]
+
+permissions:
+  centitpa.use:
+    description: Erlaubt TPA-Befehle zu nutzen
+    default: true
+  centitpa.toggle:
+    description: Erlaubt das Deaktivieren von TPA-Anfragen
+    default: true
+  centitpa.bypass.cooldown:
+    description: Umgeht den Sende-Cooldown
+    default: op
+  centitpa.bypass.movecancel:
+    description: Bewegung bricht Warmup nicht ab
+    default: op

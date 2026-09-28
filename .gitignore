@@ -1,0 +1,17 @@
+# Maven
+target/
+*.class
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# ProGuard outputs
+proguard_map.txt
+proguard_seed.txt
+
+# OS
+.DS_Store
+Thumbs.db

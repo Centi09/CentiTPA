@@ -1,0 +1,56 @@
+# CentiTPA Konfiguration
+# Entwickelt von Centi09
+# Befehl zum Neuladen: /tpa reload
+
+# Zeiten (in Sekunden)
+timing:
+  # Wie lange hat der Empfaenger Zeit die Anfrage anzunehmen?
+  request-timeout: 60
+  # Wie lange muss der Sender zwischen zwei Anfragen warten?
+  send-cooldown: 10
+  # Wie viele Sekunden Countdown vor dem Teleport?
+  warmup: 5
+  # Wie lange ist der Schutz nach dem Teleport aktiv?
+  protection: 5
+
+# Sounds
+sounds:
+  # Sound beim Empfang einer Anfrage
+  request-received: BLOCK_NOTE_BLOCK_PLING
+  # Sound beim erfolgreichen Teleport
+  teleport-success: ENTITY_ENDERMAN_TELEPORT
+  # Sound beim Warmup-Countdown (letzte 3 Sekunden)
+  warmup-tick: BLOCK_NOTE_BLOCK_HAT
+
+# Nachrichten
+messages:
+  prefix: "&8[&5TPA&8] "
+  no-permission: "&cDu hast keine Berechtigung fuer diesen Befehl."
+  only-player: "&cNur Spieler koennen diesen Befehl nutzen."
+  player-not-found: "&cSpieler nicht online."
+  self-request: "&cDu kannst dir keine Anfrage selbst schicken."
+  request-sent-tpa: "&7Anfrage an &f{target} &7gesendet. &8({world})"
+  request-sent-tpahere: "&7Here-Anfrage an &f{target} &7gesendet. &8({world})"
+  request-received-tpa: "&f{sender} &7moechte sich zu dir teleportieren. &8({world})"
+  request-received-tpahere: "&f{sender} &7moechte, dass du dich zu ihm teleportierst. &8({world})"
+  request-expired-sender: "&cDeine TPA-Anfrage an &f{target} &cist abgelaufen."
+  request-expired-target: "&7Die TPA-Anfrage von &f{sender} &7ist abgelaufen."
+  no-incoming-request: "&cDu hast keine offene TPA-Anfrage."
+  no-outgoing-request: "&cDu hast keine laufende Anfrage."
+  requester-offline: "&cDer anfragende Spieler ist nicht mehr online."
+  cooldown: "&cBitte warte noch &f{seconds}s&c."
+  toggle-off: "&7Eingehende TPA-Anfragen sind nun &cAUS&7."
+  toggle-on: "&7Eingehende TPA-Anfragen sind nun &dAN&7."
+  target-toggle-off: "&c{target} hat TPA-Anfragen deaktiviert."
+  request-denied-sender: "&c{target} hat deine TPA-Anfrage abgelehnt."
+  request-denied-target: "&7Du hast die Anfrage von &f{sender} &7abgelehnt."
+  request-cancelled-sender: "&7Deine Anfrage wurde abgebrochen."
+  request-cancelled-target: "&7Die TPA-Anfrage von &f{sender} &7wurde zurueckgezogen."
+  warmup-start: "&7Teleport startet in &d{seconds}s&7. Nicht bewegen!"
+  warmup-tick: "&7Teleport in &f{seconds}&7..."
+  warmup-cancelled-move: "&cTeleport abgebrochen: Du hast dich bewegt."
+  warmup-cancelled-offline: "&cTeleport abgebrochen: Zielspieler ist offline."
+  teleport-success: "&dTeleport erfolgreich! &8({seconds}s Schutz aktiv)"
+  protection-expired: "&7Dein Teleport-Schutz ist abgelaufen."
+  accept-message: "&7Anfrage von &f{sender} &7angenommen."
+  accept-notify: "&f{target} &7hat deine Anfrage angenommen."
